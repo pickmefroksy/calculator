@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="calculator.MainPage">
+    <Grid Background="DarkOrange">
+        <StackLayout>
+            <Label Text="калькулятор" Margin="128, 0, 0, 0"  TextColor="Black" FontSize="Large" FontAttributes="Bold"/>
+            <StackLayout Orientation="Horizontal" Spacing="50" HorizontalOptions="CenterAndExpand">
+                <Entry x:Name="num1" TextColor="Black" WidthRequest="100" Keyboard="Numeric"/>
+                <Label Text="|"/>
+                <Entry x:Name="num2" TextColor="Black" WidthRequest="100" Keyboard="Numeric"/>
+            </StackLayout>
+            <Label Text="=" Margin="5" HorizontalTextAlignment="Center"/>
+            <Label x:Name="sum" Margin="65, 0, 0, 0" HorizontalTextAlignment="Start"/>
+            <Button Text="Сумма" Margin="25, 0, 0, 0"  BackgroundColor="Black" TextColor="DarkOrange" CornerRadius="20" HorizontalOptions="Start" Clicked="Button_Clicked_1"/>
+            <Label x:Name="generation" Margin="65, 10, 0, 0" HorizontalTextAlignment="Start"/>
+            <Button Text="Умножение" Margin="25, 0, 0, 0" BackgroundColor="Black" TextColor="DarkOrange" CornerRadius="20" HorizontalOptions="Start"  Clicked="Button_Clicked_2"/>
+            <Label x:Name="degree" Margin="65, 10, 0 , 0" HorizontalTextAlignment="Start"/>
+            <Button Text="Деление" Margin="25, 0, 0, 0" BackgroundColor="Black" TextColor="DarkOrange" CornerRadius="20" HorizontalOptions="Start" Clicked="Button_Clicked_3"/>
+            <Label x:Name="difference" Margin="65, 10, 0, 0" HorizontalTextAlignment="Start"/>
+            <Button Text="Разность" Margin="25, 0, 0, 0" BackgroundColor="Black" TextColor="DarkOrange" CornerRadius="20" HorizontalOptions="Start"  Clicked="Button_Clicked_4"/>
+            <Button Text="Справка" Margin="0, 270, 0, 0" BackgroundColor="Black" TextColor="DarkOrange" CornerRadius="20" HorizontalOptions="Fill" Clicked="Button_Clicked_5" />
+        </StackLayout>
+    </Grid>
+</ContentPage>
